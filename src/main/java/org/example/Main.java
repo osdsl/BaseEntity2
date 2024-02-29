@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
+//Определение класса Main, который содержит метод main в качестве точки входа
 public class Main {
     private static final List<Person> entities = new ArrayList<>();
     private static final Scanner scanner = new Scanner(System.in);
@@ -16,7 +16,7 @@ public class Main {
             System.out.println("4. Compare two items");
             System.out.println("5. Exit");
             System.out.print("Select an option: ");
-
+//объект Scanner для считывания ввода пользователя из консоли
             int choice = scanner.nextInt();
             switch (choice) {
                 case 1:
@@ -39,7 +39,9 @@ public class Main {
             }
         }
     }
-
+//метод addItem запрашивает у пользователя 
+//данные для создания объекта класса Student, добавляет этот объект в 
+//список и выводит сообщение об успешном добавлении
     private static void addItem() {
         // Пример добавления объекта класса Student
         System.out.print("Enter ID: ");
